@@ -257,3 +257,38 @@ footer{
         grid-row-end: 5;
     }
 }
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+
+    h2{
+        width: 100%;
+    }
+    article{
+        min-width: 200px !important;
+        margin: 0;
+        flex-grow: 1;
+    }
+}
+
+section.flex-grow{
+    justify-content: flex-start;
+
+    article{
+        max-width: 900px;
+        min-width: 100px;
+        flex-grow: 1;
+        width: 31%;
+    }
+}
+
+.grow-1{
+    flex-grow: 1;
+}
+
+.grow-2{
+    flex-grow: 2;
+}
